@@ -1,50 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale-1.0">
     <title>Aula Imagens</title>
-
-    <!-- 1) Favicon -->
     <link rel="icon" href="favicon.ico">
-
 </head>
-
 <body>
+    <h1>Desafio das Imagens</h1>
+    <h2>Imagens da cidade de Vila Velha-Es</h2>
+    <img src="vilavelha.jpg" alt="Cidade de Vila Velha"largura="279px">
+    <hr>
 
-    <!-- 2) Nome da página -->
-    <h1>Aula Imagens</h1>
-
-    <!-- 3) Título do conteúdo -->
-    <h2>Desafio das Imagens</h2>
-
-    <!-- 4) Subtítulo com o nome da cidade -->
-    <h3>Vila Velha - Espírito Santo</h3>
-
-    <!-- 5) Imagem da cidade -->
-    <img src="vilavelha.jpg" alt="Cidade de Vila Velha">
-
-    <br><br>
-
-    <!-- 6) Imagem com legenda -->
+      <h2>Imagem de Vila Velha-ES com Legenda</h2>
+        <img src="velhaleg.jpg" alt="Cidade de vila velha com enfoque na praia" width="361px">
     <figure>
-        <img src="conventopenha.jpg" alt="Convento da Penha" width="400">
-        <figcaption>Convento da Penha - Cartão postal de Vila Velha</figcaption>
-    </figure>
+        <hr>
 
-    <br>
-
-    <!-- 7) Imagem que muda tamanho em telas menores -->
-    <picture>
-
-        <!-- imagem menor quando tela até 760px -->
-        <source media="(max-width: 760px)" srcset="praia-pequena.jpg">
-
-        <!-- imagem normal -->
-        <img src="praia-grande.jpg" alt="Paisagem da Praia de Vila Velha" width="600">
-
-    </picture>
+        <h1>Imagem que muda de tamanho</h1>
+        <figure>
+        <picture>
+              <source srcset="vvgrande.jpg" 
+               media="(min-width: 1000px)">
+              <img src="vvpequena.jpg" alt="imagem da cidade de vv" width="361px">
+        </picture>
+    <figure>
 
 </body>
-
 </html>
